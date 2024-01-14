@@ -1,7 +1,27 @@
-h1 {
-    color:blue;
-    font-family: helvetica;
+@keyframes textColorShift {
+    0% {
+        color: #fbae42; /* Start color */
+    }
+    25% {
+        color: #e3680f; /* Intermediate color 1 */
+    }
+    50% {
+        color: #ff512f; /* Intermediate color 2 */
+    }
+    75% {
+        color: #dd2476; /* Intermediate color 3 */
+    }
+    100% {
+        color: #ff512f; /* End color */
+    }
 }
+
+h1 {
+    font-size: 2em;
+    font-family: helvetica;
+    animation: textColorShift 5s infinite alternate;
+}
+
 p {color:gray;
 font-family: helvetica;}
 
