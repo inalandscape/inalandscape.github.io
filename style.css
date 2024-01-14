@@ -41,25 +41,23 @@ main {
 
 .marquee-container {
     overflow: hidden;
-    white-space: wrap;
+    white-space: nowrap;
     width: 50%;
-    background-color: none; /* Set background color */
+    background-color: none;
 }
 
 .marquee-content {
-    color:rgba(0, 2, 30, 0.927);
-    font-family: helvetica;
+    display: inline-table;
+    animation: marqueeAnimation 20s linear infinite;
     text-align: left;
-    display: inline-block;
-    animation: marqueeAnimation 31s linear infinite;
 }
 
 @keyframes marqueeAnimation {
-    0% {
-        transform: translateX(100%);
-    }
     100% {
         transform: translateX(-100%);
+    }
+    0% {
+        transform: translateX(100%);
     }
 }
 
