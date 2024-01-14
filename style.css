@@ -1,32 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 95%;
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 @keyframes textColorShift {
     0% {
-        color: #fbae42; /* Start color */
+        color: #c78304d8; /* Start color */
     }
     25% {
-        color: #e3680f; /* Intermediate color 1 */
+        color: #d05700c8; /* Intermediate color 1 */
     }
     50% {
-        color: #ff512f; /* Intermediate color 2 */
+        color: #901901c5; /* Intermediate color 2 */
     }
     75% {
-        color: #dd2476; /* Intermediate color 3 */
+        color: #dd2477b5; /* Intermediate color 3 */
     }
     100% {
-        color: #ff512f; /* End color */
+        color: #850202d3; /* End color */
+    }
+}
+
+.marquee-container {
+    overflow: hidden;
+    white-space: wrap;
+    width: 50%;
+    background-color: none; /* Set background color */
+}
+
+.marquee-content {
+    color:rgba(0, 2, 30, 0.927);
+    font-family: helvetica;
+    text-align: left;
+    display: inline-block;
+    animation: marqueeAnimation 31s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
 h1 {
     font-size: 2em;
     font-family: helvetica;
-    animation: textColorShift 5s infinite alternate;
+    animation: textColorShift 6s infinite alternate;
 }
 
-p {color:gray;
-font-family: helvetica;}
+p {color:rgb(38, 38, 38);
+font-family: helvetica;
+font-size: 10pt;}
+
+
+
+div { text-align: center;
+    color: #000000;
+    font-family: helvetica;
+    margin: 0 10px;
+}
+
+divText a:hover {
+    background-color: #7fff242c;
+}
 
 img {
-    width: 60%;
-    height: 60%;
-
+    width: 50%;
+    height: 50%;
 }
