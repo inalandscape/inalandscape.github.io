@@ -1,10 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 header {
     width: 95%;
@@ -14,11 +7,12 @@ header {
     box-sizing: border-box;
 }
 
-main {
-    width: 80%;
-    max-width: 800px;
-    padding: 20px;
-    box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @keyframes textColorShift {
@@ -38,27 +32,51 @@ main {
         color: #850202d3; /* End color */
     }
 }
-
+.info {    
+    overflow: hidden;
+    white-space: wrap;
+    width: 50%;
+    position: relative;
+   }
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
     width: 50%;
-    background-color: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+ }
+
+.marquee-container div {
+    display: inline-block;
+    margin-bottom: 10px;
+    position: relative;
+    opacity: 0; 
+    
 }
 
-.marquee-content {
-    display: inline-table;
-    animation: marqueeAnimation 20s linear infinite;
-    text-align: left;
-}
+.marquee-1 { animation: scrollFromRight 31s linear infinite 0s; }
+.marquee-2 { animation: scrollFromRight 35s linear infinite 9.75s; }
+.marquee-3 { animation: scrollFromRight 33s linear infinite 18.5s; }
+.marquee-4 { animation: scrollFromRight 37s linear infinite 24.25s; }
+.marquee-5 { animation: scrollFromRight 35s linear infinite 30.6s; }
+.marquee-6 { animation: scrollFromRight 35s linear infinite 38.75s; }
+.marquee-7 { animation: scrollFromRight 35s linear infinite 43.5s; }
+.marquee-8 { animation: scrollFromRight 36s linear infinite 49.25s; }
+.marquee-9 { animation: scrollFromRight 34s linear infinite 53s; }
+.marquee-10 { animation: scrollFromRight 35s linear infinite 60.75s; }
+.marquee-11 { animation: scrollFromRight 30s linear infinite 64.5s; }
+.marquee-12 { animation: scrollFromRight 36s linear infinite 70.25s; }
+.marquee-13 { animation: scrollFromRight 37s linear infinite 75s; }
+.marquee-14 { animation: scrollFromRight 32s linear infinite 82.75s; }
+.marquee-15 { animation: scrollFromRight 30s linear infinite 88.5s; }
+.marquee-16 { animation: scrollFromRight 35s linear infinite 92.25s; }
 
-@keyframes marqueeAnimation {
-    100% {
-        transform: translateX(-100%);
-    }
-    0% {
-        transform: translateX(100%);
-    }
+@keyframes scrollFromRight {
+    0% { transform: translateX(100%); opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 1; }
 }
 
 h1 {
@@ -67,21 +85,20 @@ h1 {
     animation: textColorShift 6s infinite alternate;
 }
 
-p {color:rgb(38, 38, 38);
-font-family: helvetica;
-font-size: 10pt;}
+p {
+    color:rgb(17, 17, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
 
 
 
-div { text-align: center;
+div { 
+    text-align: center;
     color: #000000;
-    font-family: helvetica;
-    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-divText a:hover {
-    background-color: #7fff242c;
-}
 
 img {
     width: 50%;
