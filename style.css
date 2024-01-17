@@ -1,9 +1,9 @@
 
 header {
-    width: 95%;
+    width: 95 %;
     background-color: #ffffff;
     color: white;
-    padding: 5px;
+    padding: 5 px;
     box-sizing: border-box;
 }
 
@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-@keyframes textColorShift {
+keyframes textColorShift {
     0% {
         color: #c78304d8; /* Start color */
     }
@@ -35,59 +35,59 @@ body {
 .info {    
     overflow: hidden;
     white-space: wrap;
-    width: 50%;
+    width: 50 %;
     position: relative;
    }
 .marquee-container {
     overflow: hidden;
     white-space: nowrap;
-    width: 50%;
+    width: 50 %;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50 %;
+    left: 50 %;
+    transform: translate (-50 %, -50 %);
    
  }
 
 .marquee-container div {
     display: inline-block;
-    margin-bottom: 10px; /* Adjust the spacing between marquee items */
+    margin-bottom: 10 px; /* Adjust the spacing between marquee items */
     position: relative;
     opacity: 0; 
     
 }
 
-.marquee-1 { animation: scrollFromRight 31s linear infinite 0s; }
-.marquee-2 { animation: scrollFromRight 35s linear infinite 9.75s; }
-.marquee-3 { animation: scrollFromRight 33s linear infinite 18.5s; }
-.marquee-4 { animation: scrollFromRight 37s linear infinite 24.25s; }
-.marquee-5 { animation: scrollFromRight 35s linear infinite 30.6s; }
-.marquee-6 { animation: scrollFromRight 35s linear infinite 38.75s; }
-.marquee-7 { animation: scrollFromRight 35s linear infinite 43.5s; }
-.marquee-8 { animation: scrollFromRight 36s linear infinite 49.25s; }
-.marquee-9 { animation: scrollFromRight 34s linear infinite 53s; }
-.marquee-10 { animation: scrollFromRight 35s linear infinite 60.75s; }
-.marquee-11 { animation: scrollFromRight 30s linear infinite 64.5s; }
-.marquee-12 { animation: scrollFromRight 36s linear infinite 70.25s; }
-.marquee-13 { animation: scrollFromRight 37s linear infinite 75s; }
-.marquee-14 { animation: scrollFromRight 32s linear infinite 82.75s; }
-.marquee-15 { animation: scrollFromRight 30s linear infinite 88.5s; }
-.marquee-16 { animation: scrollFromRight 35s linear infinite 92.25s; }
+.marquee-1 { animation: scrollFromRight 31 s linear infinite 0 s; }
+.marquee-2 { animation: scrollFromRight 35 s linear infinite 9.75 s; }
+.marquee-3 { animation: scrollFromRight 33 s linear infinite 18.5 s; }
+.marquee-4 { animation: scrollFromRight 37 s linear infinite 24.25 s; }
+.marquee-5 { animation: scrollFromRight 35 s linear infinite 30.6 s; }
+.marquee-6 { animation: scrollFromRight 35 s linear infinite 38.75 s; }
+.marquee-7 { animation: scrollFromRight 35 s linear infinite 43.5 s; }
+.marquee-8 { animation: scrollFromRight 36 s linear infinite 49.25 s; }
+.marquee-9 { animation: scrollFromRight 34 s linear infinite 53 s; }
+.marquee-10 { animation: scrollFromRight 35 s linear infinite 60.75 s; }
+.marquee-11 { animation: scrollFromRight 30 s linear infinite 64.5 s; }
+.marquee-12 { animation: scrollFromRight 36 s linear infinite 70.25 s; }
+.marquee-13 { animation: scrollFromRight 37 s linear infinite 75 s; }
+.marquee-14 { animation: scrollFromRight 32 s linear infinite 82.75 s; }
+.marquee-15 { animation: scrollFromRight 30 s linear infinite 88.5 s; }
+.marquee-16 { animation: scrollFromRight 35 s linear infinite 92.25 s; }
 
-@keyframes scrollFromRight {
-    0% { transform: translateX(100%); opacity: 1; }
-    100% { transform: translateX(-100%); opacity: 1; }
+keyframes scrollFromRight {
+    0 % { transform: translateX (100 %); opacity: 1; }
+    100 % { transform: translateX (-100 %); opacity: 1; }
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2 em;
     font-family: helvetica;
-    animation: textColorShift 6s infinite alternate;
+    animation: textColorShift 6 s infinite alternate;
 }
 
-p {color:rgb(17, 17, 17);
+p {color: rgb (17, 17, 17);
 font-family: Arial, Helvetica, sans-serif;
-font-size: 10pt;}
+font-size: 10 pt;}
 
 
 
@@ -99,6 +99,6 @@ div { text-align: center;
 
 
 img {
-    width: 50%;
-    height: 50%;
+    width: 50 %;
+    height: 50 %;
 }
