@@ -51,7 +51,7 @@ body {
 
 .marquee-container div {
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adjust the spacing between marquee items */
     position: relative;
     opacity: 0; 
     
@@ -85,18 +85,16 @@ h1 {
     animation: textColorShift 6s infinite alternate;
 }
 
-p {
-    color:rgb(17, 17, 17);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10pt;
-}
+p {color:rgb(17, 17, 17);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10pt;}
 
 
 
-div { 
-    text-align: center;
+div { text-align: center;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
