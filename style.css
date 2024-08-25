@@ -85,9 +85,12 @@ h1 {
     animation: textColorShift 6s infinite alternate;
 }
 
-p {color:rgb(17, 17, 17);
+p {
+color:rgb(17, 17, 17);
 font-family: Arial, Helvetica, sans-serif;
-font-size: 10pt;}
+font-size: 10pt;
+margin-bottom: 20px;
+  }
 
 
 
@@ -102,5 +105,4 @@ div { text-align: center;
 img {
     width: 60%;
     height: 60%;
-    margin: 30px;
 }
